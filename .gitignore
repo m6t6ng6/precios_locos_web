@@ -1,0 +1,6 @@
+# ignore myenv files
+
+myenv/
+.git/
+.DS_Store
+__pycache__/
