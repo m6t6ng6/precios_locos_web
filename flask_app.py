@@ -4,9 +4,11 @@ import re
 app = Flask(__name__)
 
 nombre_de_empresa = "Precios Locos"
-telefono = "0054 (911) 5345-7787"     # formato: 0054 (911) 5345-7787
+telefono = "(11) 5345-7787"     # formato: (11) 5345-7787
 pattern = r'(\d)'
 telefono_link = ''.join(re.findall(pattern, telefono))
+
+mensaje_whatsapp = "Hola! Estoy interesado en hablar con algún representante de Precios Locos sobre un producto que me interesa."
 
 lista_de_precios="https://docs.google.com/spreadsheets/d/1To91GePxRf-gTOqdDhFL_-ZIoMgvWOQMMdCi2nhLtFQ/edit?usp=drive_link"
 
@@ -26,7 +28,8 @@ def home():
         medios_de_pago="Aceptamos MercadoPago, tarjetas (crédito y débito), transferencias y efectivo",
         envios="Enviamos a todo el pais",
         precios_comentarios="Lista de precios de celulares de alta y media gama - consultar stock",
-        lista_de_precios=lista_de_precios
+        lista_de_precios=lista_de_precios,
+        mensaje_whatsapp=mensaje_whatsapp
         )
 
 if __name__ == "__main__":

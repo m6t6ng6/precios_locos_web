@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="https://wa.me/{{ telefono_link }}">
+            <a class="navbar-brand" href="https://api.whatsapp.com/send?text={{ mensaje_whatsapp }}&phone={{ telefono_link }}">
                 <div class="collapse navbar-collapse justify-content-between">
                     <div class="navbar-nav" style="display:table;">
                         <span style="display: table-cell; vertical-align: middle;">
@@ -59,7 +59,7 @@
         <div id="row_externa" class="row">
           <div id="" class="col">
             <p id="texto" style="margin-top: 10px">{{ mensaje1 }}</p>
-            <a id="texto" href="https://wa.me/{{ telefono_link }}"> {{ mensaje2 }} <p><img style="margin-right: 10px;" src="/static/whatsapp_logo.png" alt="Logo" width="24" height="24" class="d-inline-block align-text-top">{{ telefono }}</p></a>
+            <a id="texto" href="https://api.whatsapp.com/send?text={{ mensaje_whatsapp }}&phone={{ telefono_link }}"> {{ mensaje2 }} <p><img style="margin-right: 10px;" src="/static/whatsapp_logo.png" alt="Logo" width="24" height="24" class="d-inline-block align-text-top">{{ telefono }}</p></a>
             <p id="texto">{{ envio }}</p>
           </div>
         </div>
