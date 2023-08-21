@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=320, initial-scale=1.0, user-scalable=no">
     <title>{% block title %}{% endblock %}</title>
     <link rel="shortcut icon" href="{{ url_for('static', filename='precios_locos_icon.png') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/main.css') }}">
@@ -59,7 +59,7 @@
         <div id="row_externa" class="row">
           <div id="" class="col">
             <p id="texto" style="margin-top: 10px">{{ mensaje1 }}</p>
-            <p id="texto">{{ mensaje2 }}</p>
+            <a id="texto" href="https://wa.me/{{ telefono_link }}"> {{ mensaje2 }} <p><img style="margin-right: 10px;" src="/static/whatsapp_logo.png" alt="Logo" width="24" height="24" class="d-inline-block align-text-top">{{ telefono }}</p></a>
             <p id="texto">{{ envio }}</p>
           </div>
         </div>

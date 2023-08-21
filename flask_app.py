@@ -18,7 +18,7 @@ def home():
         "productos.html",
         titulo=nombre_de_empresa,
         mensaje1="Todas las publicaciones que ves en ML las podés obtener a precio de descuento pagando en efectivo o por transferencia.",
-        mensaje2="Contactanos a nuestro WhatsApp: " + telefono + ". Clickeá sobre el ícono de WhatsApp en la barra de navegación para agregarnos.",
+        mensaje2="Contactanos a nuestro WhatsApp. Clickeá sobre el teléfono para agregarnos a tus contactos.",
         envio="El envío se realiza a convenir entre nosotros y vos en algún lugar público para la seguridad de todos.",
         telefono=telefono,
         telefono_link=telefono_link,
