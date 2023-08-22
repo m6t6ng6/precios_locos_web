@@ -7,7 +7,9 @@ RUN     apt-get -y update; \
 COPY    flask_app.py    /opt/source-code/
 COPY    templates/*     /opt/source-code/templates/
 COPY    static/css/*    /opt/source-code/static/css/
-COPY    static/*.png    /opt/source-code/static/       
+COPY    static/*.png    /opt/source-code/static/
+COPY    static/*.js     /opt/source-code/static/       
+COPY    static/*.svg    /opt/source-code/static/
 
 COPY    requirements.txt /tmp/requirements.txt
 
